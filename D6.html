@@ -148,7 +148,7 @@
 
         const newP = parent[0].parentElement;
         const parag = document.createElement("p");
-        parag.innerText = "ciaociao";
+        parag.innerText = "Hello";
         newP.appendChild(parag);
       };
       addParagraph();
@@ -157,10 +157,11 @@
          Scrivi una funzione che faccia scomparire la prima lista non ordinata
       */
 
-      const hideFirstUl = function () {
-        const hiddenList = document.getElementById("firstlist");
-      };
-      hideFirstUl();
+      // const hideFirstUl = function () {
+      //   const hiddenList = document.getElementById("firstlist");
+      //   hiddenList.style.visibility = "hidden";
+      //};
+      //  hideFirstUl();
 
       /* ESERCIZIO 8
          Scrivi una funzione che renda verde il background di ogni lista non ordinata
@@ -188,7 +189,7 @@
         */
 
       const revealFooterLink = function () {
-        const pop = document.getElementsByName("footer", "a");
+        const pop = document.getElementsByName("footer a");
         pop.innerText = alert(
           "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents"
         );
@@ -225,6 +226,11 @@
 
       const changeColorWithRandom = function () {
         const randomColor = document.getElementById("changeMyColor");
+        randomColor.style.color = `rgb(${Math.floor(
+          Math.random() * 256
+        )},${Math.floor(Math.random() * 256)},${Math.floor(
+          Math.random() * 256
+        )})`;
       };
     </script>
   </body>
